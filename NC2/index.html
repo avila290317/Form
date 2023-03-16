@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Segundo Parcial</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+        <h1 style="text-align: center;">Formulario</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+              <form>
+                <label for="Nombre"> Nombre:  </label> <br>
+                <input type="text" name="name" id="name" required/>
+                <br>
+                <label for="Correo">Correo:</label> <br>
+                <input type="email" id="email" name="email" required/>
+                <br>
+                <label for="Carrera">Carrera:</label> <br>  
+                <input type="radio" name="carrera" id="carrera1" required/>IDGS
+                <br>
+                <input type="radio" name="carrera" id="carrera1" required/>IEVND
+                <br>
+                <input type="radio" name="carrera" id="carrera1" required/>IM
+
+                <br>
+                <label for="Pasatiempos">Pasatiempos:</label> <br>  
+                <input type="checkbox" name="pasatiempos" id="pt1" required/>Musica <br>  
+                <input type="checkbox" name="pasatiempos" id="pt1" required/>Deportes <br>  
+                <input type="checkbox" name="pasatiempos" id="pt1" required/>Series <br>  
+                <input type="checkbox" name="pasatiempos" id="pt1" required/>Peliculas
+                <br> <br>
+                <div class="g-recaptcha" data-sitekey="6Ld9_QklAAAAAPl-DiZMrpgdyh5GnfBbDDGPGYFL" data-callback="correctCaptcha"></div>
+                <input type="button" value="Limpiar" onclick="limpiar()">
+                <input type="button" value="Enviar" onclick="agregar()">
+
+                <br><br>
+                <label for="contador">Contador:</label> <input type="text" name="conta" id="conta" readonly value="0" size="2px"/> <br>  
+              </form>
+              
+            </div>
+
+            <div class="col-md-6">
+                <label for="Nombre"> Nombre:  </label> <br>
+                <input type="text" name="name2" id="name2" readonly/>
+                <br>
+                <label for="Correo">Correo:</label> <br>
+                <input type="email" name="email2" id="email2" readonly/>
+                <br>
+                <label for="Carrera">Carrera:</label> <br>  
+                <input type="radio" name="carrera2" id="carrera2" disabled />IDGS
+                <br>
+                <input type="radio" name="carrera2" id="carrera2" disabled />IEVND
+                <br>
+                <input type="radio" name="carrera2" id="carrera2" disabled/>IM
+
+                <br>
+                <label for="Pasatiempos">Pasatiempos:</label> <br>  
+                <input type="checkbox" name="pasatiempos2" id="pt2" disabled/>Musica <br>  
+                <input type="checkbox" name="pasatiempos2" id="pt2" disabled/>Deportes <br>  
+                <input type="checkbox" name="pasatiempos2" id="pt2" disabled/>Series <br>  
+                <input type="checkbox" name="pasatiempos2" id="pt2" disabled/>Peliculas
+                <br> <br>
+                <input type="button" value="Anterior" onclick="cambiar('anterior')">
+                <input type="button" value="Siguiente" onclick="cambiar('siguiente')">
+                <br> <br>
+                <input type="text" name="pos" id="pos" readonly value="0" size="2px"/>  /   <input type="text" name="conta2" id="conta2" readonly value="0" size="2px"/>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="index.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
